@@ -1,0 +1,9 @@
+com\ysc\after\school\mobile\controller\HomeController.class
+com\ysc\after\school\mobile\config\WebConfig.class
+com\ysc\after\school\mobile\controller\LessonController.class
+com\ysc\after\school\mobile\config\WebInitializer.class
+com\ysc\after\school\mobile\controller\StudentController.class
+com\ysc\after\school\mobile\domain\db\Student.class
+com\ysc\after\school\mobile\config\AppConfig.class
+com\ysc\after\school\mobile\service\StudentService.class
+com\ysc\after\school\mobile\domain\Domain.class

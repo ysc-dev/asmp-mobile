@@ -1,0 +1,107 @@
+@charset "EUC-KR";
+
+body { font-family:myFirstFont, NanumGothic,Verdana,Dotum,"돋움",sans-serif; font-size:14px; color:#000; }
+@font-face { font-family:myFirstFont; src:local('NanumGothic') }
+input, select, textarea{ font-size:12px; font-family:myFirstFont, NanumGothic,Verdana,Dotum,"돋움",sans-serif; color:#000; }
+* { -webkit-text-size-adjust:none; }
+
+.layout-boxed-bg {
+    background: url(../images/boxed_bg.png) repeat;
+}
+
+@media (min-width: 800px) {
+	.wrap {
+	    width: 800px;
+	    margin: 0 auto;
+	    overflow: hidden;
+	}
+}
+
+/*******************************************************************************************************
+ content 디자인
+*******************************************************************************************************/
+.content-wrapper {
+	background: #fff;
+}
+
+.content-wrapper h2 {
+	display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 25px 0;
+    border-bottom: 1px dashed #a0a0a0;
+    font-size: 18px;
+    text-align: center;
+    color: #000;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/*******************************************************************************************************
+ 학생등록 디자인
+*******************************************************************************************************/
+.content-wrapper .student-content {
+	width: 380px;
+    margin: 0 auto;
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+.student-content p.txt {
+    font-size: 16px;
+    color: #0075cc;
+    font-weight: bold;
+    text-align: center;
+}
+
+.student-content .col-form-label {
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
+    padding: 6px 10px 0 10px;
+}
+
+/*******************************************************************************************************
+ 수강신청 디자인
+*******************************************************************************************************/
+.content-wrapper .apply-content {
+	width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    color: #484848;
+}
+
+.apply-content .txt_bold {
+    display: inline-block;
+    width: 80px;
+    font-weight: bold;
+    color: #000;
+}
+
+/*******************************************************************************************************
+ button 디자인
+*******************************************************************************************************/
+.button-content {
+	background: #f6f6f5;
+    padding: 25px 0;
+}
+
+.custom-btn {
+	width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0 0 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/*******************************************************************************************************
+ 내용 디자인
+*******************************************************************************************************/
+.list-group {
+	border: 0;
+	padding: 0;
+}
