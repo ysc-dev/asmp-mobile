@@ -82,7 +82,7 @@
 			</div>
 	    </div>
 	    <div class="button-content text-center">
-	    	<button type="button" class="btn bg-primary-700 rounded-round custom-btn">학생 등록</button>
+	    	<button type="submit" class="btn bg-primary-700 rounded-round custom-btn">학생 등록</button>
 	    </div>
     </form:form>
 </div>

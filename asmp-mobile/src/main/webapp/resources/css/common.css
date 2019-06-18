@@ -17,6 +17,8 @@ input, select, textarea{ font-size:12px; font-family:myFirstFont, NanumGothic,Ve
 	}
 }
 
+
+
 /*******************************************************************************************************
  content 디자인
 *******************************************************************************************************/
@@ -79,6 +81,10 @@ input, select, textarea{ font-size:12px; font-family:myFirstFont, NanumGothic,Ve
     color: #000;
 }
 
+.apply-peirod {
+	letter-spacing: -.02em;
+}
+
 /*******************************************************************************************************
  button 디자인
 *******************************************************************************************************/
@@ -92,10 +98,13 @@ input, select, textarea{ font-size:12px; font-family:myFirstFont, NanumGothic,Ve
     height: 50px;
     margin: 0 auto;
     text-align: center;
-    padding: 10px 0 0 0;
     font-size: 18px;
     font-weight: bold;
     color: #fff;
+}
+
+.apply-btn {
+	padding: 10px 0;
 }
 
 /*******************************************************************************************************

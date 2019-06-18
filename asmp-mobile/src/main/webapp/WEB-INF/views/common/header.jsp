@@ -2,7 +2,7 @@
 <%@ include file="/WEB-INF/views/common/tagLib.jsp"%>
 
 <div class="header">
-	<div class="navbar navbar-expand navbar-dark bg-primary-600 navbar-component border-transparent">
+	<div class="navbar navbar-expand navbar-dark bg-blue-800 navbar-component border-transparent">
 		<div class="navbar-collapse">
 			<ul class="navbar-nav navbar-nav-highlight">
 				<li class="nav-item">
