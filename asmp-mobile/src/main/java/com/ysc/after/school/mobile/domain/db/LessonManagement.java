@@ -1,0 +1,57 @@
+package com.ysc.after.school.mobile.domain.db;
+
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+import javax.persistence.PrePersist;
+import javax.persistence.Table;
+
+import com.ysc.after.school.mobile.domain.Domain;
+import com.ysc.after.school.mobile.util.DateUtil;
+
+import lombok.Data;
+
+/**
+ * 수강인원 관리 도메인
+ * 
+ * @author hgko
+ *
+ */
+@Entity
+@Table(name = "tb_lesson_management")
+@Data
+public class LessonManagement implements Domain {
+
+	@Id
+	@GeneratedValue
+	private long id;
+	
+	@OneToOne
+	@JoinColumn(name = "lesson_id")
+	private Lesson lesson;
+
+	/** 수강인원 학생 */
+	@ManyToOne
+	@JoinColumn(name = "student_id")
+	private Student student;
+	
+	/** 강좌-반 */
+	@OneToOne
+	@JoinColumn(name = "lesson_info_id")
+	private LessonInfo lessonInfo;
+	
+	/** 등록일 */
+	@Column(length = 20)
+	private String createDate;
+	
+	@PrePersist
+	public void prePersist() {
+		createDate = DateUtil.convertDate(new Date());
+	}
+}

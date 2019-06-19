@@ -6,36 +6,14 @@
 </c:import>
 
 <div class="list-group list-group-bordered bg-slate-600">
-	<a href="subscribe2" class="list-group-item list-group-item-action">
-		<div class="flex-fill">
-			<div class="d-flex justify-content-between mx-2">
-				<h6 class="mb-0">키움캠퍼스 (7)</h6>
-				<i class="icon-arrow-right32 my-1"></i>
+	<c:forEach var="subjectGroup" items="${subjectGroups}" varStatus="status">
+		<a href="subscribe2?groupId=${subjectGroup.id}" class="list-group-item list-group-item-action">
+			<div class="flex-fill">
+				<div class="d-flex justify-content-between mx-2">
+					<h6 class="mb-0">${subjectGroup.name} (${subjectGroup.lesson})</h6>
+					<i class="icon-arrow-right32 my-1"></i>
+				</div>
 			</div>
-		</div>
-	</a>
-	<a href="subscribe2" class="list-group-item list-group-item-action">
-		<div class="flex-fill">
-			<div class="d-flex justify-content-between mx-2">
-				<h6 class="mb-0">드림캠퍼스 (11)</h6>
-				<i class="icon-arrow-right32 my-1"></i>
-			</div>
-		</div>
-	</a>
-	<a href="subscribe2" class="list-group-item list-group-item-action">
-		<div class="flex-fill">
-			<div class="d-flex justify-content-between mx-2">
-				<h6 class="mb-0">브레인캠퍼스 (6)</h6>
-				<i class="icon-arrow-right32 my-1"></i>
-			</div>
-		</div>
-	</a>
-	<a href="subscribe2" class="list-group-item list-group-item-action">
-		<div class="flex-fill">
-			<div class="d-flex justify-content-between mx-2">
-				<h6 class="mb-0">Y캠프캠퍼스 (1)</h6>
-				<i class="icon-arrow-right32 my-1"></i>
-			</div>
-		</div>
-	</a>
+		</a>
+	</c:forEach>
 </div>

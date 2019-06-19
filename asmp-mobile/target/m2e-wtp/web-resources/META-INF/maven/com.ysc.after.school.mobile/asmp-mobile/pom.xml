@@ -22,6 +22,16 @@
 		<!-- Spring : test, core, context, aop, jdbc -->
 		<org.springframework-version>4.3.18.RELEASE</org.springframework-version>
 		
+		<!-- Spring Data JPA -->
+		<springframework-data.version>1.11.14.RELEASE</springframework-data.version>
+		
+		<!-- Persistence Framework -->
+		<hibernate.version>4.3.11.Final</hibernate.version>
+		<commons-dbcp.version>1.4</commons-dbcp.version>
+
+		<!-- Database -->
+		<mysql.version>5.1.47</mysql.version>
+		
 		<!-- Tiles Framework -->
 		<tiles-version>3.0.5</tiles-version>
 
@@ -165,6 +175,34 @@
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-annotations</artifactId>
 			<version>${jackson.version}</version>
+		</dependency>
+		
+		<!-- Hibernate -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+
+		<!-- Data Source -->
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>${commons-dbcp.version}</version>
+		</dependency>
+
+		<!-- Spring Data -->
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>${springframework-data.version}</version>
+		</dependency>
+
+		<!-- MySQL -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
 		</dependency>
 	</dependencies>
 	
