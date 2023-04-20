@@ -20,22 +20,22 @@
 		<org.aspectj-version>1.8.10</org.aspectj-version>
 
 		<!-- Spring : test, core, context, aop, jdbc -->
-		<org.springframework-version>4.3.18.RELEASE</org.springframework-version>
+		<org.springframework-version>5.2.20.RELEASE</org.springframework-version>
 		
 		<!-- Spring Data JPA -->
-		<springframework-data.version>1.11.14.RELEASE</springframework-data.version>
+		<springframework-data.version>1.11.23.RELEASE</springframework-data.version>
 		
 		<!-- Persistence Framework -->
 		<hibernate.version>4.3.11.Final</hibernate.version>
 		<commons-dbcp.version>1.4</commons-dbcp.version>
 
 		<!-- Database -->
-		<mysql.version>5.1.47</mysql.version>
+		<mysql.version>8.0.28</mysql.version>
 		
 		<!-- Tiles Framework -->
 		<tiles-version>3.0.5</tiles-version>
 
-		<jackson.version>2.9.6</jackson.version>
+		<jackson.version>2.12.7.1</jackson.version>
 
 		<!-- Logging -->
 		<org.slf4j-version>1.7.21</org.slf4j-version>
